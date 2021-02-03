@@ -289,7 +289,11 @@
 
 // }
 
+//****************************************************
+
 // Task 2
+
+//Q1
 
 // void fun(int x)
 // {
@@ -303,6 +307,7 @@
 //  printf("%d", y);
 // }
 
+//Q2
 
 // void fun(int*ptr)
 // {
@@ -315,6 +320,7 @@
 // printf("%d", y);
 // }
  
+//Q3
 
 // int main()
 // {
@@ -332,3 +338,52 @@
 // printf(" *ptr = %d", *ptr);
 
 // }
+
+// lab 4
+
+//Scheduling Algorithms
+//FCFS
+
+// int main()
+// {
+
+// int bt[20], wt[20], tat[20], i, n;
+// float wtavg, tatavg;
+
+// printf("/nEnter the number of process");
+// scanf("%d", &n);
+
+// for (i=0; i<n; i++)
+// {
+//   printf("/nEnter the burst time of process %d =", i);
+//   scanf("%d", &bt[i]);
+// }
+
+// wt[0]= wtavg=0, tat[0]=tatavg=0;
+
+// for ( i = 0; i < n; i++)
+// {
+//   wt[i]= wt[i-1] + bt[i-1];
+//   tat[i]= tat[i-1] + bt[i];
+//   wtavg= wtavg + wt[i];
+//   tatavg= tatavg + tat[i];
+// }
+
+// printf("\t Process \t Burst Time \t Waiting Time \t TurnAround Time\n");
+
+// for ( i = 0; i < n; i++)
+// {
+//   printf("\n\t P%d  \t\t %d \t\t %d \t\t %d", i, bt[i], wt[i], tat[i]);
+// }
+
+// printf("\n");
+// printf("\n Average Waiting Time =%f", wtavg/n);
+// printf("\n Average TurnAround Time =%f", tatavg/n);
+// printf("\n");
+// printf("\n");
+// return 0;
+
+// }
+
+
+
